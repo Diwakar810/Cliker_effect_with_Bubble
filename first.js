@@ -13,14 +13,15 @@ body.addEventListener('click',(e)=>{
 
     let ind= Math.floor(Math.random()*5);
     div.style.backgroundColor=color[ind];
-    div.style.left=`${e.clientX}px`;
-    div.style.top=`${e.clientY}px`;
+    div.style.left=`${e.clientX-25}px`;
+    div.style.top=`${e.clientY-25}px`;
     div.innerText="Hi";
 
     body.append(div);
     setTimeout(() => {
         div.remove();
     }, 5000);
+
 
 
 
